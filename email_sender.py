@@ -42,7 +42,7 @@ class EmailSender:
             msg = EmailMessage()
             email_to = message['email']
             msg['Subject'] = 'Birthday'
-            msg['To'] = 'bmdanik1@gmail.com'
+            msg['To'] = email_to
             msg['From'] = self.login
             msg.set_content(f'Hi {message["name"]}That pretty guy ({birthday_guy_name}) have birthday in 7 days')
 
